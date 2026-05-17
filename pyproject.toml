@@ -30,6 +30,11 @@ dependencies = [
   "opencv-python>=4.8,<4.12",
   'mediapipe==0.10.21; python_version < "3.13" and platform_machine != "aarch64"',
   'mediapipe==0.10.18; python_version < "3.13" and platform_machine == "aarch64"',
+  "kornia>=0.8.2",
+  "onnxruntime>=1.24.3",
+  "onnx2torch>=1.5.15",
+  "insightface>=0.7.3",
+  "transformers>=5.8.1",
 ]
 
 [project.optional-dependencies]
@@ -62,6 +67,9 @@ models = [
   "onnxruntime>=1.16",
   "kornia>=0.7",
   "insightface>=0.7",
+  "librosa>=0.10",
+  "scipy>=1.10",
+  "tqdm>=4.65",
   "diffusers>=0.34",
   "openai-whisper>=20240930",
 ]
